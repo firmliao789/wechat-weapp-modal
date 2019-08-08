@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.modal.show {
+  z-index: 9999;
+}
+
+.content.none {
+  opacity: 0;
+}
+
+.content.from-down-up {
+  margin-top: 100vh;
+}
+
+.content.from-left-right {
+  margin-left: 100vw;
+}
