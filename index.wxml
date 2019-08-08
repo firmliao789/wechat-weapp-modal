@@ -1,0 +1,6 @@
+<view class="modal {{hierarchy&&'show'}}">
+  <view animation="{{animationDataBackDrop}}" class="backdrop" bindtap="backdroptap"></view>
+  <view animation="{{animationData}}" class="content {{animation}} {{hierarchy&&'animation'}}" style="height:{{height}}">
+    <slot/>
+  </view>
+</view>
